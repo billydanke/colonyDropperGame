@@ -30,10 +30,9 @@ function Star(x, y) {
     this.isDrawn = isDrawn;
   
     this.draw = function() {
-      if(isDrawn) {
+      if(this.isDrawn) {
         ctx.imageSmoothingEnabled = false;
         ctx.drawImage(this.img,this.x-(this.width/2),this.y-(this.height/2), this.width*this.scale, this.height*this.scale);
-        console.log("draw at (",this.x,",",this.y,") with scale ",this.scale)
       }
     }
   }

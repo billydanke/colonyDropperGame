@@ -122,7 +122,6 @@ function draw() {
 
   // Draw Colony Ship
   colonyShip.draw();
-  //console.log("Colony ship drawn")
 
   // Draw Time in Years
   makeText(20, 20, ("Year " + years.toString()), 'bold 48px monospace', 'white');
@@ -444,4 +443,3 @@ function startup() {
 shipImg.onload = function() {
   startup();
 }
-//startup();
